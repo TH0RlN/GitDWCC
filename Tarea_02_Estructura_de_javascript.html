@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea_02_Estructura_de_javascript</title>
+</head>
+<body>
+    <h2>Tablas</h2>
+    <table id="table" border='1' cellpadding='10' cellspacing='2' float="right"></table>
+    <h2>Bit Displacement</h2>
+    <ul id="list">
+    </ul>
+    
+    <script>    //Script para tablas
+            var table = "<tr><td><h3>Tabla multiplicar 7</h3></td>";
+            
+            /*Bucle for para tabla del 7*/
+            for (let i = 0; i <= 10; i++)
+            {
+                table += "<td>" + 7 + " x " + i + " = " + (i * 7) + "</td>";
+            }
+
+            table += "</tr><tr><td><h3>Tabla sumar 8</h3></td>";
+            var i   = -1;
+            /*Bucle while para tabla del 8*/
+            while (i++ < 10)
+            {
+                table += "<td>" + 8 + " + " + i + " = " + (i + 8) + "</td>";
+            }
+
+            table += "</tr><tr><td><h3>Tabla dividir 9</h3></td>";
+
+            i = 0;
+            /*Bucle do...while para tabla del 9*/
+            do
+            {
+                table += "<td>" + 9 + " / " + i + " = " + (i / 9).toPrecision(2) + "</td>";
+            } while (i++ < 10);
+
+            table += "</tr>";
+            document.getElementById("table").innerHTML = table;
+    </script>
+    <script>    //Script desplazamiento de bits
+        
+    </script>
+</body>
+</html>
